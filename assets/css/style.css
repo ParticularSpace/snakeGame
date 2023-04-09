@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;400;700&family=Climate+Crisis&family=Schibsted+Grotesk:wght@400;500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chivo Mono', monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
