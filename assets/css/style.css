@@ -30,6 +30,27 @@ body {
     padding: 10px;
 }
 
+#start-button {
+    width: 100px;
+    height: 75px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+#start-button {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#start-button:hover {
+    background: #6d86e9;
+    color: #fff;
+}
+
 .header_stats {
     display: flex;
     justify-content: space-between;
@@ -42,14 +63,31 @@ body {
 
 }
 
-.game_board {
-    display: flex;
+.play-board {
+    display: grid;
     justify-content: center;
     align-items: center;
     background-color: lightblue;
     width: 500px;
-    height: 500px;  
+    height: 500px;
+    grid-template-rows: repeat(30, 1fr);
+    grid-template-columns: repeat(30, 1fr);
 }
+
+.play-board.head {
+    background-color: green;
+}
+
+.play-board.food {
+    background-color: red;
+}
+
+.play-board .segment {
+    background-color: rgb(25, 63, 25);
+}
+
+
+
 
 .controls {
     display: flex;

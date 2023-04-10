@@ -15,25 +15,26 @@
   <body>
     <div class="wrapper">
         <div class="header_stats">
-          <div class="score">
-            Score: <span class="score_value">0</span>
-          </div>
-          <div class="high_score">
-            High Score: <span class="high_score_value">0</span>
-          </div>
+            <div class="header_stats">
+                Score: <span class="score">0</span>
+            </div>
+            <div class="header_stats">
+                High Score: <span class="high-score">0</span>
+            </div>
+            
         </div>
-        <div class="game_board">
-          <div id="snake"></div>
-          <div id="food"></div>
+
+        <div class="play-board">
+            <button id="start-button">Start Button</button>
         </div>
+
         <div class="controls">
-          <i id="arrowLeft" class="fa-solid fa-arrow-left-long"></i>
-          <i id="arrowUp" class="fa-solid fa-arrow-up-long"></i>
-          <i id="arrowDown" class="fa-solid fa-arrow-down-long"></i>
-          <i id="arrowRight" class="fa-solid fa-arrow-right-long"></i>
+          <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+          <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+          <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+          <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
         </div>
     </div>
-    <script src="jquery-3.6.3.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
