@@ -2,7 +2,7 @@
 
 ## URL
 
-
+https://particularspace.github.io/snakeGame/
 
 ## Description
 
