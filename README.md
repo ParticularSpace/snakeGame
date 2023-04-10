@@ -13,7 +13,7 @@ A weather dashboard to help you search US cities weather!
 Enter your city and search todays weather as well as coming weeks forecast.     
 
 ## Screenshot
-![A picture of the webpage](assets/images/weather-Dashboard.png "Weather Dashboard")
+![A picture of the webpage](assets/images/screenShot.png "Classic Snake Game")
 
 ## Credits
 
