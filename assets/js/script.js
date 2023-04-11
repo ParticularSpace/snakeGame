@@ -1,3 +1,4 @@
+// grab all elements 
 const playBoard = document.querySelector(".play-board");
 const scoreElement = document.querySelector(".score");
 const highScoreElement = document.querySelector(".high-score");
@@ -6,7 +7,7 @@ const startButton = document.querySelector(".start-btn");
 const countdownElement = document.querySelector(".countdown");
 
 
-
+// Game variables to be used
 let gameOver = false;
 let foodX, foodY;
 let snakeX = 15, snakeY = 15;
@@ -15,6 +16,7 @@ let snakeBody = [];
 let setIntervalId;
 let score = 0;
 
+// Start game
 const startGame = () => {
     countdownElement.style.display = "block";
     countdown(3);
@@ -27,10 +29,9 @@ highScoreElement.innerText = `High Score: ${highScore}`;
 
 // Pass a random between 1 and 40 as food position
 
-
 const createFoodPosition = () => {
     return {
-        x: Math.floor(Math.random() * 50) + 1,
+        x: Math.floor(Math.random() * 30) + 1,
         y: Math.floor(Math.random() * 30) + 1
     };
 };
@@ -116,7 +117,7 @@ foodPositions[index] = createFoodPosition();
     snakeBody[0] = [snakeX, snakeY];
 
     // Check snake body is out of wall or no
-    if (snakeX <= 0 || snakeX > 50 || snakeY <= 0 || snakeY > 30) {
+    if (snakeX <= 0 || snakeX > 30 || snakeY <= 0 || snakeY > 30) {
         return gameOver = true;
     }
 
