@@ -6,11 +6,11 @@ https://particularspace.github.io/snakeGame/
 
 ## Description
 
-A weather dashboard to help you search US cities weather!
+You know the snake game... the Classic Snake Game.
 
 ## Usage
 
-Enter your city and search todays weather as well as coming weeks forecast.     
+Click the start game button to start the game. Use the arrow keys to move the snake. Eat the food to grow the snake. Don't hit the walls or yourself.     
 
 ## Screenshot
 ![A picture of the webpage](assets/images/screenShot.png "Classic Snake Game")

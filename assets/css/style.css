@@ -1,73 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;400;700&family=Climate+Crisis&family=Schibsted+Grotesk:wght@400;500;800&display=swap');
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Chivo Mono', monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Chivo Mono', monospace;
 }
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #7988dd;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('https://wallpapercave.com/wp/wp3432038.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
-.wrapper{
-    width: 65vmin;
-    height: 70vmin;
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: center;
-    background: #1b3c44;
-    border-radius: 5px;
-    box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+.wrapper {
+  width:80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #7a4141;
+  border-radius: 5px;
+  box-shadow: 0 20px 40px rgba(47, 158, 140, 0.2);
+  padding: 1rem;
 }
 
-.game-details{
-    color: #b8c6dc;
+.game-details {
+    color: #ffffff;
     font-weight: 500;
     font-size: 1.2rem;
     padding: 20px 27px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Adjusts the space between the game details */
 }
 
-.play-board{
-    height: 100%;
-    width: 100%;
-    display: grid;
-    background: #212837;
-    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+
+.play-board {
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(30, 20px);
+  grid-template-columns: repeat(50, 20px);
+  gap: 1px;
+  background-color: #315f78;
+  border: 1px solid #222;
+  margin: 0 auto;
+  width: 1020px;
+  height: 620px;
 }
 
-.play-board .food{
-    background: #c715bb8c;
-    border-radius: 5px;
+.start-btn {
+  display: block;
+  margin: 5px;
+  font-size: 1.3rem;
+  background-color: #1f9b5d;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.play-board .head{
-    background: #1f955a;
-    border-radius: 5px;
+.start-btn:hover {
+  background-color: #28a745;
 }
 
-.controls{
-    display: none;
-    justify-content: space-between;
+.countdown {
+  display: none;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  z-index: 1;
 }
 
-.controls i{
-    padding: 25px 0;
-    text-align: center;
-    font-size: 1.3rem;
-    color: #b8c6dc;
-    width: calc(100% / 4);
-    cursor: pointer;
-    border-right: 1px solid #171b26;
+.play-board .food {
+  background: #ff0000db;
+  border-radius: 50%;
+}
+
+.play-board .head {
+  background: #115231;
+  border-radius: 95%;
+}
+
+.play-board .snake-head {
+  background: #6bb11f;
+  border-radius: 5px;
+}
+
+.play-board .trueHead {
+  background-color: #31520e;
+}
+
+.controls {
+  display: none;
+  justify-content: space-between;
+}
+
+.controls i {
+  padding: 25px 0;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #b8c6dc;
+  width: calc(100% / 4);
+  cursor: pointer;
+  border-right: 1px solid #59d4e0;
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 800px) {
