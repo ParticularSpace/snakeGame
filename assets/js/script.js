@@ -6,10 +6,11 @@ const startButton = document.querySelector(".start-btn");
 const countdownElement = document.querySelector(".countdown");
 
 
+
 let gameOver = false;
 let foodX, foodY;
 let snakeX = 15, snakeY = 15;
-let velocityX = 0, velocityY = 0;
+let velocityX = 1, velocityY = 0;
 let snakeBody = [];
 let setIntervalId;
 let score = 0;

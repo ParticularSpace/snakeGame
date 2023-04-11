@@ -18,8 +18,8 @@ body {
 }
 
 .wrapper {
-  width:80%;
-  height: 100%;
+    width: 1100px;
+    height: 750px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,15 +31,23 @@ body {
 }
 
 .game-details {
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 1.2rem;
-    padding: 20px 27px;
     display: flex;
-    justify-content: space-between; /* Adjusts the space between the game details */
-}
-
-
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 15px 50px;
+    font-size: 1.2rem;
+    width: 100%;
+    color: #ffffff;
+  }
+  
+  .score {
+    margin-right: auto;
+  }
+  
+  .high-score {
+    margin-left: auto;
+  }
+  
 .play-board {
   position: relative;
   display: grid;
@@ -71,7 +79,6 @@ body {
 }
 
 .countdown {
-  display: none;
   font-size: 3rem;
   position: absolute;
   top: 50%;
