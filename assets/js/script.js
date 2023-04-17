@@ -1,5 +1,6 @@
 // grab all elements 
 const playBoard = document.querySelector(".play-board");
+const wrapper = document.querySelector(".wrapper");
 const scoreElement = document.querySelector(".score");
 const highScoreElement = document.querySelector(".high-score");
 const controls = document.querySelectorAll(".controls i");
@@ -50,7 +51,7 @@ const countdown = (time) => {
 
 const handleGameOver = () => {
     clearInterval(setIntervalId);
-    playBoard.innerHTML = `
+    wrapper.innerHTML = `
         <div class="game-over">
             <h2>Game Over!</h2>
             <button class="retry-btn">Retry</button>
